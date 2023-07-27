@@ -8,7 +8,7 @@ function click(e) {
         expression.push(+buttonId);
     }
 
-    if (buttonId === '.') {
+    if (buttonId === 'point') {
         screen.innerText += buttonId;
         expression.push(buttonId);
     }
@@ -38,7 +38,7 @@ function click(e) {
 
     if (buttonId === 'delete') {
         discard = expression.pop();
-        screen.innerText = screen.innerText.slice(0, screen.innerText.length - 2); 
+        screen.innerText = screen.innerText.slice(0, -1); 
     }
     
     console.log(expression);
